@@ -1,18 +1,22 @@
 import React, { Component } from 'react'
-import Spaces from './Spaces'
 
 class Board extends Component {
+
+  
   render() {
     return (
       <table>
-        <Spaces />
-        <Spaces />
-        <Spaces />
-        <Spaces />
-        <Spaces />
-        <Spaces />
-        <Spaces />
-        <Spaces />
+        <tbody>
+        <tr>
+          <td className="header" colspan="8">
+            <select>
+              <option value="0">Easy</option>
+              <option value="1">Intermediate</option>
+              <option value="0">Hard</option>
+            </select>
+          </td>
+        </tr>
+        </tbody>
       </table>
     )
   }
